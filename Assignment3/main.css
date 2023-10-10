@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(120deg, #f2f4f6, #a6dcef);
+    color: #444;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s ease-in-out;
+}
+
+h2, h3 {
+    margin: 1em 0;
+}
+
+#content {
+    max-width: 1000px;
+    width: 90%;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    height: auto;
+    overflow: auto;
+}
+
+.blog-logo {
+    width: 80px;
+}
+
+h2 {
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+h2:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200%;
+    height: 200%;
+    background-color: #1E90FF;
+    z-index: -1;
+    transform: translate(-50%, -50%) rotate(45deg);
+    transition: all 0.5s ease-in-out;
+}
+
+h2:hover:before {
+    width: 0;
+    height: 0;
+}
+
+h2 a {
+    padding: 10px 20px;
+    z-index: 1;
+}
+
+.topnav {
+    display: flex;
+    justify-content: flex-end; /* Change this from 'space-around' to 'flex-end' */
+    align-items: center;
+    margin: 20px 0;
+}
+
+.topnav a {
+    padding: 8px 15px;
+    background: #1E90FF;
+    color: white;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.topnav a:hover {
+    background: #1565c0;
+}
+
+h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+h3 a {
+    border-bottom: 2px solid #1E90FF;
+    transition: border-color 0.3s ease;
+}
+
+h3 a:hover {
+    border-color: transparent;
+}
+
+p a {
+    background: #1E90FF;
+    padding: 0.3px 1.5px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-left: 10px;
+    color: white;
+}
+
+p a:last-child {
+    background: transparent;
+    box-shadow: none;
+    color: #1E90FF;
+    border: 2px solid #1E90FF;
+}
+
+p a:hover {
+    background: #1565c0;
+}
+
+.edit-button, .read-full-button {
+    padding: 3px 8px;
+    font-size: 0.85em;
+    border-radius: 25px;
+    transition: all 0.3s;
+}
+
+.edit-button {
+    margin-left: 10px;
+    background-color: #ff7f50;
+    color: white;
+    border: none;
+}
+
+.edit-button:hover {
+    background-color: #ff6347;
+}
+
+.read-full-button {
+    background-color: transparent;
+    border: 2px solid #1E90FF;
+    color: #1E90FF;
+}
+
+.read-full-button:hover {
+    background-color: #1E90FF;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    #content {
+        margin: 20px;
+    }
+
+    .topnav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+}
