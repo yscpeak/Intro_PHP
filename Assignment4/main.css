@@ -1,0 +1,58 @@
+/******w**************
+    
+    Assignment 4 Stylesheet
+    Name: Yi Siang Chang
+    Date: 2023-10-21
+    Description: AJAX, JSON, and Open Data
+
+*********************/
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.search-container {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input {
+    width: 70%;
+    padding: 10px;
+    font-size: 1em;
+}
+
+button {
+    width: 28%;
+    padding: 10px;
+    font-size: 1em;
+    background-color: #FF8C00;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #FF8C00;
+}
+
+#results {
+    margin-top: 20px;
+}
